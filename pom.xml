@@ -66,13 +66,17 @@
 				<artifactId>jib-maven-plugin</artifactId>
 				<version>2.1.0</version>
 				<configuration>
+					<from>
+						<image>openjdk:8</image>
+					</from>
 					<to>
-						<image>registry.hub.docker.com/ukathirvelu/demo:4</image>
+						<image>registry.hub.docker.com/ukathirvelu/demo:7</image>
 					</to>
 					<container>
 						<ports>
 							<port>8082</port>
 						</ports>
+						<mainClass>com.example.demo.DemoApplication</mainClass>
 					</container>
 				</configuration>
 			</plugin>
